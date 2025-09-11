@@ -1,0 +1,185 @@
+    :root {
+      --bg-color: #121826;
+      --card-color: #1a2233;
+      --text-color: #e5e7eb;
+      --muted-color: #94a3b8;
+      --primary-color: #22d3ee;
+      --success-color: #4ade80;
+      --border-color: #334155;
+      --input-bg: #2a3447;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .controls {
+      background-color: var(--card-color);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      align-items: end;
+      margin-bottom: 2rem;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-group label {
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+      color: var(--muted-color);
+    }
+
+    .input-group.checkbox-group {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 0.75rem;
+      /* Align with button */
+    }
+
+    #term-input,
+    #dont-care-input,
+    #variable-select,
+    #term-type-select {
+      background-color: var(--input-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    #solve-btn {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+    }
+
+    #solve-btn:hover {
+      background-color: #67e8f9;
+      transform: translateY(-2px);
+    }
+
+    #solution {
+      margin-top: 2rem;
+    }
+
+    .solution-step {
+      background-color: var(--card-color);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .solution-step h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .final-expression {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--success-color);
+      background-color: var(--input-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .kmap-container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+
+    .kmap-table {
+      border-collapse: collapse;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .kmap-table th,
+    .kmap-table td {
+      border: 1px solid var(--border-color);
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .kmap-table th {
+      background-color: var(--input-bg);
+      font-weight: normal;
+    }
+
+    .kmap-table td {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .kmap-table .minterm-index {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      font-size: 0.6rem;
+      color: var(--muted-color);
+    }
+
+    .kmap-table .dont-care {
+      color: var(--muted-color);
+    }
+
+    #error-message {
+      color: #f87171;
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Karnaugh Map (K-Map) Solver</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Advanced K-Map Solver</h1>
+      <p>Enter terms to generate a simplified boolean expression, now with "Don't Care" support.</p>
+    </header>
+
+    <div class="controls">
+      <div class="input-group">
+        <label for="term-type-select">Expression Type</label>
+        <select id="term-type-select">
+          <option value="min">Minterms Σm (SoP)</option>
+          <option value="max">Maxterms ΠM (PoS)</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="term-input">Required Terms Σm or ΠM (...)</label>
+        <input type="text" id="term-input" placeholder="e.g., 0, 1, 4, 5">
+      </div>
+      <div class="input-group">
+        <label for="dont-care-input">Don't Cares d(...)</label>
+        <input type="text" id="dont-care-input" placeholder="e.g., 9, 11, 13, 15">
+      </div>
+      <div class="input-group">
+        <label for="variable-select">Number of Variables</label>
+        <select id="variable-select">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected>4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>&nbsp;</label>
+        <button id="solve-btn">Solve</button>
+      </div>
+      <div class="input-group checkbox-group">
+        <input type="checkbox" id="auto-solve-check" checked>
+        <label for="auto-solve-check">Auto-solve on change</label>
+      </div>
+    </div>
+
+    <div id="error-message"></div>
+    <div id="solution"></div>
+  </div>
+  <footer>
+    <p>
+      Developed by <strong>Rakibul Hashan</strong>
+      &nbsp;&bull;&nbsp;
+      <a href="https://github.com/Rakibul-Hashan" target="_blank" rel="noopener noreferrer">GitHub</a>
+      &nbsp;&bull;&nbsp;
+      <a href="https://www.linkedin.com/in/rakibulhashanrabbi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>

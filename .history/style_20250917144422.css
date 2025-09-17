@@ -40,18 +40,18 @@ header h1 {
 }
 
 footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px 0;
-  border-top: 1px solid var(--border-color);
-  color: var(--muted-color);
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--muted-color);
 }
 footer a {
-  color: var(--primary-color);
-  text-decoration: none;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .controls {
@@ -90,10 +90,10 @@ footer a:hover {
 }
 
 .input-group.checkbox-group {
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  align-self: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: center;
 }
 
 #solve-btn {
@@ -126,7 +126,7 @@ footer a:hover {
   overflow-x: auto; /* Allow horizontal scroll for tables */
 }
 .solution-step.group-step {
-  background-color: #161d2d; /* Slightly different bg for group details */
+    background-color: #161d2d; /* Slightly different bg for group details */
 }
 
 .solution-step h2 {
@@ -184,12 +184,12 @@ footer a:hover {
   font-weight: bold;
 }
 .kmap-table td span.dont-care {
-  color: var(--color-dont-care);
-  font-weight: normal;
+    color: var(--color-dont-care);
+    font-weight: normal;
 }
 .kmap-table td span:not(.minterm-index) {
-  font-size: 1.25rem;
-  font-weight: bold;
+     font-size: 1.25rem;
+     font-weight: bold;
 }
 
 .kmap-table .minterm-index {
@@ -218,8 +218,7 @@ footer a:hover {
   min-width: 400px;
   font-family: "Courier New", Courier, monospace;
 }
-.truth-table th,
-.truth-table td {
+.truth-table th, .truth-table td {
   border: 1px solid var(--border-color);
   padding: 8px 12px;
   text-align: center;
@@ -231,50 +230,51 @@ footer a:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
 .truth-table td.out-one {
-  color: var(--color-one);
-  font-weight: bold;
+    color: var(--color-one);
+    font-weight: bold;
 }
 .truth-table td.out-zero {
-  color: var(--color-zero);
+    color: var(--color-zero);
 }
 .truth-table td.dont-care {
-  color: var(--color-dont-care);
+    color: var(--color-dont-care);
 }
 .truth-table td.minterm-index {
-  color: var(--muted-color);
-  font-size: 0.8em;
-  border-right: 2px solid var(--border-color);
+    color: var(--muted-color);
+    font-size: 0.8em;
+    border-right: 2px solid var(--border-color);
 }
+
 
 /* Standard Forms */
 .std-form {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.1rem;
-  padding: 8px;
-  background: var(--input-bg);
-  border-radius: 6px;
-  margin-bottom: 10px;
-  color: var(--text-color);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.1rem;
+    padding: 8px;
+    background: var(--input-bg);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    color: var(--text-color);
 }
 .std-form strong {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Circuit Logic */
 .circuit-logic {
-  line-height: 1.6;
+    line-height: 1.6;
 }
 .circuit-logic h4 {
-  color: var(--primary-color);
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px dashed var(--border-color);
-  padding-bottom: 4px;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 4px;
 }
 .circuit-logic ol {
-  margin: 0;
-  padding-left: 20px;
+    margin: 0;
+    padding-left: 20px;
 }
 .circuit-logic li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
